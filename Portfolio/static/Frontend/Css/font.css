@@ -1,0 +1,6 @@
+/* Add Font To Website */
+
+@font-face{
+    font-family: "Andika";
+    src: '../Fonts/Andika_New_Basic/AndikaNewBasic-Regular.ttf';
+}

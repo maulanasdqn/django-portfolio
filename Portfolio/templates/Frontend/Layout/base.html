@@ -1,0 +1,35 @@
+<!-- Static Load For Load The CSS/JS/Images Files -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maulana</title>
+
+    <!-- Bootstrap CSS Load -->
+    <link rel="stylesheet" href="{% static 'Frontend/Css/bootstrap.min.css' %}">
+    
+    <!-- Fontawesome CSS Load -->
+    <link rel="stylesheet" href="{% static 'Frontend/Css/all.min.css' %}">
+
+    <!-- Custom CSS Load -->
+    <link rel="stylesheet" href="{% static 'Frontend/Css/app.css' %}">
+</head>
+<body>
+    
+    <!-- Content Block -->
+    {% block data %}
+    {% endblock %}
+
+    
+    <!-- Popper JS Load -->
+    <script src="{% static 'Frontend/Js/popper.min.js' %}"></script>
+    
+    <!-- Jquery JS Load -->
+    <script src="{% static 'Frontend/Js/jquery.slim.min.js' %}"></script>
+    
+    <!-- Bootstrap JS Load -->
+    <script src="{% static 'Frontend/Js/bootstrap.min.js' %}"></script>
+</body>
+</html>
