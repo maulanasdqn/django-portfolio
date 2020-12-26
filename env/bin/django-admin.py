@@ -1,4 +1,4 @@
-#!/var/www/html/Django/Personal/env/bin/python3
+#!/home/msdqn/django-portfolio/env/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
