@@ -1,3 +1,79 @@
-/* Add Font To CSS Files and then Load it To Website */
-/* Import Font */
-@import url(./font.css)
+/* Start Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+/* End Import Font */
+
+/* Start Import Varible CSS */
+@import url(./_variable.css);
+/* End Import Variable CSS */
+
+/* Start Import Global CSS */
+@import url(./_global.css);
+/* End Import Global CSS */
+
+/* Start Navigation */
+.navbar-brand{
+    background:var(--gradient-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-area .main .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+    font-family:var(--langar);
+    font-size: 53px;
+    
+}
+
+.header-area .main .navbar {
+    padding: 1rem 20rem;
+}
+
+.header-area .main .nav-item .nav-link{
+    font:normal 500 15px/2px var(--andika);
+    padding: 1.7rem;
+    color:var(--title-color);
+}
+
+.header-area .main .navbar-nav .active a{
+    background:var(--gradient-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-area .main .navbar-nav a:hover{
+    background:var(--gradient-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* End Navigation */
+
+/* Start Banner Area */
+.site-main .site-banner .site-title h3 {
+    padding-top: 10%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background:black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-images > img{
+    padding: 4rem 0;
+    width: 90rem;
+}
+
+/* End Banner Area */

@@ -1,4 +1,3 @@
-<!-- Static Load For Load The CSS/JS/Images Files -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +16,9 @@
     <link rel="stylesheet" href="{% static 'Frontend/Css/app.css' %}">
 </head>
 <body>
-    
-    <!-- Content Block -->
     {% block data %}
     {% endblock %}
 
-    
     <!-- Popper JS Load -->
     <script src="{% static 'Frontend/Js/popper.min.js' %}"></script>
     
@@ -31,5 +27,6 @@
     
     <!-- Bootstrap JS Load -->
     <script src="{% static 'Frontend/Js/bootstrap.min.js' %}"></script>
+
 </body>
 </html>
