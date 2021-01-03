@@ -5,3 +5,9 @@ def panel(request):
 
 def content(request):
     return render(request, 'Backend/Pages/Manage/Content/manage-content.html')
+
+def user(request):
+    return render(request, 'Backend/Pages/Manage/User/manage-user.html')
+
+def profile(request):
+    return render(request, 'Backend/Pages/Manage/Profile/manage-profile.html')
