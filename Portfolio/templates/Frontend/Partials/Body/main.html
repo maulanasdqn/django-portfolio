@@ -3,15 +3,16 @@
     <section class="site-banner">
         <div class="container">
             <div class="row">
+                {% for data in data %}
                 <div class="col-lg-6 col-md-12 site-title">
                     <h3 class="title-text color-text">
-                        Hallo
+                        {{data.header}}
                     </h3>
                     <h1 class="title-text color-text">
-                        iam Maulana Sodiqin
+                        {{data.judul}}
                     </h1>
                     <h4 class="title-text text-uppercase">
-                        Fullstack Web Developer
+                        {{data.tentang}}
                     </h4>
                     <div class="site-buttons">
                         <div class="d-flex flex-row flex-wrap">
@@ -24,6 +25,7 @@
                         </div>
                     </div>
                 </div>
+                {% endfor %}
                 <div class="col-lg-6 col-md-12 banner-images">
                     <img src="{% static 'Frontend/Images/Banner/banner.png' %}" alt="Banner Images" class="img-fluid">
                 </div>
