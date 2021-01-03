@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Portfolio.u'))
+    path('', include('Portfolio.url-frontend')),
+    path('panel/', include('Portfolio.url-backend')),
 ]
